@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Yellowthroat</title>
 
     <link rel="stylesheet" href="photon/css/photon.min.css">
 
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+</head>
 
-  <script>
+<body>
+    <div class="window">
+
+        <!-- Your app's content goes inside .window-content -->
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane pane-sm sidebar">
+                    <nav class="nav-group">
+                        <h5 class="nav-group-title">Favorites</h5>
+                        <span class="nav-group-item">
+                <span class="icon icon-download"></span> Downloads
+                        </span>
+                        <span class="nav-group-item">
+                <span class="icon icon-folder"></span> Documents
+                        </span>
+                        <span class="nav-group-item">
+                <span class="icon icon-window"></span> Applications
+                        </span>
+                        <span class="nav-group-item">
+                <span class="icon icon-signal"></span> AirDrop
+                        </span>
+                        <span class="nav-group-item">
+                <span class="icon icon-monitor"></span> Desktop
+                        </span>
+                    </nav>
+                </div>
+
+                <div class="pane">
+                    <button class="btn btn-default">Default</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="toolbar toolbar-footer">
+            <h1 class="title">Footer</h1>
+        </footer>
+    </div>
+</body>
+
+<script>
     // You can also require other files to run in this process
     require('./renderer.js')
-  </script>
+</script>
+
 </html>
