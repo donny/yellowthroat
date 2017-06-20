@@ -6,6 +6,9 @@
     <title>Yellowthroat</title>
 
     <link rel="stylesheet" href="css/photon.min.css">
+    <script>delete module.exports</script>
+    <script src="./vendor/jquery-3.1.1.js"></script>
+    <script src="./js/renderer.js" charset="utf-8"></script>
 
 </head>
 
@@ -17,40 +20,33 @@
             <div class="pane-group">
                 <div class="pane pane-sm sidebar">
                     <nav class="nav-group">
-                        <h5 class="nav-group-title">Favorites</h5>
-                        <span class="nav-group-item">
-                <span class="icon icon-download"></span> Downloads
+                        <h5 class="nav-group-title">Reddit</h5>
+                        <span class="nav-group-item" id="worldnews">
+                <span class="icon icon-globe"></span> WorldNews
                         </span>
-                        <span class="nav-group-item">
-                <span class="icon icon-folder"></span> Documents
+                        <span class="nav-group-item" id="programmerdadjokes">
+                <span class="icon icon-keyboard"></span> ProgrammerDadJokes
                         </span>
-                        <span class="nav-group-item">
-                <span class="icon icon-window"></span> Applications
+                        <span class="nav-group-item" id="upliftingnews">
+                <span class="icon icon-up"></span> UpliftingNews
                         </span>
-                        <span class="nav-group-item">
-                <span class="icon icon-signal"></span> AirDrop
-                        </span>
-                        <span class="nav-group-item">
-                <span class="icon icon-monitor"></span> Desktop
+                        <span class="nav-group-item" id="spacex">
+                <span class="icon icon-rocket"></span> SpaceX
                         </span>
                     </nav>
                 </div>
 
                 <div class="pane">
-                    <button class="btn btn-default" id="btnEd">Default</button>
+                    <div id="content">
+                    </div>
                 </div>
             </div>
         </div>
 
         <footer class="toolbar toolbar-footer">
-            <h1 class="title">Footer</h1>
+            <h1 class="title">Reddit Browser</h1>
         </footer>
     </div>
 </body>
-
-<script>
-    // You can also require other files to run in this process
-    require('./js/renderer.js')
-</script>
 
 </html>
