@@ -6,21 +6,19 @@ $(document).ready(function() {
 });
 
 function handler(sub) {
-    console.log(sub);
-    $("#content").html("<p>" + sub + "</p>");
-
     $.getJSON(
         "http://www.reddit.com/r/" + sub + ".json?jsonp=?",
-        function foo(data) {
+        function process(data) {
+            $("#content-table").find('tbody').empty();
             $.each(
                 data.data.children.slice(0, 10),
                 function(i, post) {
-                    $("#content").append('<br>' + post.data.title);
-                    $("#content").append('<br>' + post.data.url);
-                    $("#content").append('<br>' + post.data.permalink);
-                    $("#content").append('<br>' + post.data.ups);
-                    $("#content").append('<br>' + post.data.downs);
-                    $("#content").append('<hr>');
+                    let row = "<tr>";
+                    row += "<td>" + post.data.ups + "</td>";
+                    row += "<td>" + post.data.author + "</td>";
+                    row += "<td>" + post.data.title + "</td>";
+                    row += "</tr>"
+                    $('#content-table > tbody:last-child').append(row);
                 }
             )
         }
