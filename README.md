@@ -4,11 +4,13 @@ Yellowthroat is an Electron app to browse predefined Reddit's subreddits.
 
 ### Background
 
-This project is part of [52projects](https://donny.github.io/52projects/) and the new stuff that I learn through this project: [Electron](https://electron.atom.io).
+This project is part of [52projects](https://donny.github.io/52projects/) and the new stuff that I learn through this project: [Electron](https://electron.atom.io) and [jQuery](https://jquery.com) (revisit).
 
 ### Project
 
-![Screenshot1](https://raw.githubusercontent.com/donny/yellowthroat/master/screenshot.png)
+Yellowthroat can be run by downloading the repository and performing the following commands: `npm install && npm start`. The app shows some predefined Reddit's subreddits on the left pane. Clicking one of them brings up the top stories from that subreddit on the right pane. The screenshot of the app can be seen below:
+
+![Screenshot](https://raw.githubusercontent.com/donny/yellowthroat/master/screenshot.png)
 
 ### Implementation
 
