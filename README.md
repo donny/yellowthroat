@@ -47,6 +47,8 @@ function handler(sub) {
 }
 ```
 
+It uses jQuery to process the data and change the DOM.
+
 ### Conclusion
 
-...
+Electron is surprisingly easy to pick up and we could quickly build an app. The UI doesn't feel native and a bit alien but the good thing about Electron is its cross-platform support. The app can be packaged and run on Linux, Windows, and macOS. I'm looking forward to explore its native capabilities in the future.
